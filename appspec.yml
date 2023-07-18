@@ -3,10 +3,10 @@ os: linux
 files:
   - source: /
     destination: /var/www/
-    exclude: appspec.yml
+    exclude:
+      - appspec.yml
 
 artifacts:
   files:
     - '**/*'  # Include all files in the build output
   discard-paths: no
-
