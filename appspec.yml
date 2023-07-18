@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /domain/
+    destination: /var/www/
+
+artifacts:
+  files:
+    - '**/*'  # Include all files in the build output
+  discard-paths: no
